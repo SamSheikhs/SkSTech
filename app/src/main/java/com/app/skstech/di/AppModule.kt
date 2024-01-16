@@ -1,4 +1,4 @@
-package com.example.skstech.di
+package com.app.skstech.di
 
 import android.content.Context
 import dagger.Module
