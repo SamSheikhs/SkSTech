@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "855837370238",
+    "project_id": "skstech-82da0",
+    "storage_bucket": "skstech-82da0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:855837370238:android:23f34cd8490942f841f52f",
+        "android_client_info": {
+          "package_name": "com.app.skstech"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWOG2pG9Jsg4HqTl0HbR5Z0QYUagXQmfk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
