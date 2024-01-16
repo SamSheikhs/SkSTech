@@ -77,8 +77,9 @@ dependencies {
     implementation("androidx.navigation:navigation-fragment-ktx:2.4.2")
 
     // Dagger Hilt
-    implementation("com.google.dagger:hilt-android:2.38.1")
-    kapt("com.google.dagger:hilt-compiler:2.38.1")
+    implementation("com.google.dagger:hilt-android:2.46.1")
+    kapt("com.google.dagger:hilt-android-compiler:2.46.1")
+
 
     // Firebase
     implementation("com.google.firebase:firebase-auth:21.0.6")
@@ -91,4 +92,8 @@ dependencies {
 
 
     implementation("com.google.firebase:firebase-analytics")
+
+    //Gson
+    implementation ("com.google.code.gson:gson:2.8.8")
+
 }

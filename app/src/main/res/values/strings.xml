@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">SkSTech</string>
+    <string name="begin_the_right_place_for_your_shopping_techs">Begin the Right Place For Your Shopping Techs</string>
+    <string name="explore_the_latest_in_tech_at_our_online_store_from_sleek_smartphones_to_powerful_laptops_find_the_perfect_gadgets_to_elevate_your_digital_experience">Explore the latest in tech at our online store! From sleek smartphones to powerful laptops, find the perfect gadgets to elevate your digital experience</string>
+    <string name="next">Next</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="sign_in">Sign In</string>
 </resources>
