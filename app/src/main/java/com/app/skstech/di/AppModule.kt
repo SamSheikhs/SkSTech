@@ -1,6 +1,8 @@
 package com.app.skstech.di
 
 import android.content.Context
+import com.google.firebase.Firebase
+import com.google.firebase.auth.FirebaseAuth
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -16,4 +18,8 @@ object AppModule {
     fun provideApplication(@ApplicationContext context: Context?): MainApp {
         return context as MainApp
     }
+
+    @Provides
+    @Singleton
+    fun provideFirebaseAuth() =  FirebaseAuth.getInstance()
 }

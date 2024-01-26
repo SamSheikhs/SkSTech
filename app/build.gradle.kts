@@ -96,4 +96,8 @@ dependencies {
     //Gson
     implementation ("com.google.code.gson:gson:2.8.8")
 
+    //toasty
+    implementation ("com.github.GrenderG:Toasty:1.5.2")
+
+
 }

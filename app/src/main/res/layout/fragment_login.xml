@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<layout>
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -31,7 +33,7 @@
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="0dp"
-        android:layout_height="220dp"
+        android:layout_height="200dp"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
         app:layout_constraintTop_toTopOf="@+id/guideline7"
@@ -41,9 +43,9 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sign In"
+        android:text="@string/sign_in"
         android:textSize="25sp"
-        android:padding="20sp"
+        android:paddingVertical="20sp"
         android:fontFamily="@font/poppins_light"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
@@ -112,14 +114,27 @@
 
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/appCompatButton2"
         android:layout_width="0dp"
         android:layout_height="50dp"
-        android:background="?attr/colorPrimary"
+        android:background="@drawable/rounded_btn_bg"
         android:text="@string/sign_in"
         android:textColor="@color/white"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
+    <TextView
+        android:id="@+id/accountTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingVertical="10dp"
+        android:textSize="17sp"
+        android:textColor="?attr/colorPrimary"
+        android:text="@string/don_t_have_an_account_signup"
+        app:layout_constraintEnd_toEndOf="@+id/appCompatButton2"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatButton2" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
