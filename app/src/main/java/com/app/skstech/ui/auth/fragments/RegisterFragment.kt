@@ -34,9 +34,6 @@ class RegisterFragment constructor() : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         loadingDialogFragmenet = LoadingDialogFragmenet()
-        parentFragmentManager.let {
-        }
-
         eventer()
         return mainBinding.root
     }
@@ -62,6 +59,12 @@ class RegisterFragment constructor() : Fragment() {
                     ) {
                         is Resource.Error -> {
                             loadingDialogFragmenet.dismiss()
+                            Toasty.error(
+                                requireActivity(),
+                                it.message.toString(),
+                                Toast.LENGTH_LONG,
+                                true
+                            ).show()
                         }
 
                         is Resource.Loading -> {
@@ -69,7 +72,6 @@ class RegisterFragment constructor() : Fragment() {
                                 parentFragmentManager,
                                 LoadingDialogFragmenet::class.java.name
                             )
-
                         }
 
                         is Resource.Success -> {
@@ -78,7 +80,6 @@ class RegisterFragment constructor() : Fragment() {
                             Toasty.success(requireActivity(), "Success!", Toast.LENGTH_SHORT, true)
                                 .show();
                         }
-
                         else -> {}
                     }
                 }
@@ -114,7 +115,7 @@ class RegisterFragment constructor() : Fragment() {
                         errorShown =  true
                     }
                     if (it.password is RegisterValidation.Failed  && !errorShown) {
-                        mobileEt.apply {
+                        passwordEt.apply {
                             error = it.password.message
                         }
                         errorShown =  true
