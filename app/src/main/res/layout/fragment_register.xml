@@ -70,7 +70,7 @@
                     android:id="@+id/textView3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppins_light"
+                    android:fontFamily="@font/poppins_dark"
                     android:paddingVertical="20sp"
                     android:text="@string/sign_up"
                     android:textSize="25sp"
@@ -90,6 +90,7 @@
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/mobileEt"
+                        android:fontFamily="@font/poppins_dark"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="@string/mobile_number">
@@ -119,6 +120,7 @@
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/passwordEt"
+                        android:fontFamily="@font/poppins_dark"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="@string/password">
@@ -170,6 +172,7 @@
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/emailEt"
+                        android:fontFamily="@font/poppins_dark"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="@string/email" />
@@ -198,6 +201,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:imeOptions="actionDone"
+                        android:fontFamily="@font/poppins_dark"
                         android:hint="@string/confirm_password" />
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -217,6 +221,7 @@
                     android:paddingVertical="10dp"
                     android:text="@string/already_have_an_account_log_in"
                     android:textSize="16sp"
+                    android:fontFamily="@font/poppins_dark"
                     app:layout_constraintEnd_toStartOf="@+id/guideline2"
                     app:layout_constraintTop_toBottomOf="@+id/regBtn" />
 
@@ -231,6 +236,7 @@
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/nameEt"
+                        android:fontFamily="@font/poppins_dark"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="@string/full_name" />

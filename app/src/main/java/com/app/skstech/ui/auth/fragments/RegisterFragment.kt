@@ -9,6 +9,7 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.findNavController
 import com.app.skstech.R
 import com.app.skstech.base.Resource
 import com.app.skstech.databinding.FragmentRegisterBinding
@@ -39,6 +40,12 @@ class RegisterFragment constructor() : Fragment() {
     }
 
     private fun eventer() {
+
+
+        mainBinding.backer.setOnClickListener {
+            findNavController().popBackStack()
+        }
+
         mainBinding.regBtn.setOnClickListener {
 
             mainBinding.apply {
@@ -73,14 +80,15 @@ class RegisterFragment constructor() : Fragment() {
                                 LoadingDialogFragmenet::class.java.name
                             )
                         }
-
                         is Resource.Success -> {
                             loadingDialogFragmenet.dismiss()
-                            Log.d("TestDebugMsg", it.message.toString())
-                            Toasty.success(requireActivity(), "Success!", Toast.LENGTH_SHORT, true)
-                                .show();
+                            Toasty.success(requireActivity(),
+                                getString(R.string.you_are_registered_successfully), Toast.LENGTH_SHORT, true)
+                                .show()
+                            findNavController().popBackStack()
                         }
-                        else -> {}
+                        else -> {
+                        }
                     }
                 }
             }
